@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import service1 from "../assets/service1.png";
-import service1Hover from "../assets/service1-full.png";
+import service1Hover from "../assets/service1-full.jpg";
 import service2 from "../assets/service2.png";
 import service2Hover from "../assets/service2-full.png";
 import service3 from "../assets/service3.png";

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import factory1 from "../assets/factory1.png";
+import factory1 from "../assets/factory1.jpg";
 import factory2 from "../assets/factory2.png";
 import factory3 from "../assets/factory3.png";
 

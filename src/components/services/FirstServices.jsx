@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { gsap } from 'gsap';
-import firstServiceImage from "../assets/factory1.png";
+import firstServiceImage from "../assets/factory1.jpg";
 import moreContentImage1 from "../assets/step1-firstService.png"; // replace with your actual images
 import moreContentImage2 from "../assets/step2-firstService.png";
 import moreContentImage3 from "../assets/step3-firstService.png";
