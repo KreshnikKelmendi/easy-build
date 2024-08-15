@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: ZonaPro;
+  src: url(../public/fonts/ZonaPro-Light.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: ZonaPro II;
+  src: url(../public/fonts/ZonaPro-SemiBold.ttf);
 }
+
+.firstServiceImage {
+  background: linear-gradient(to bottom, #772613 0%, #000000 51%);
+}
+body{
+  background-color: #F3F4F5;
+}
+
+.active {
+  background: linear-gradient(to right, #DD4726, #00000000); 
+  width: 131px;
+  text-align: center;
+  padding: 5px 0;
+}
+/* Loading Spinner Styles */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Custom Spinner Color */
+.ant-spin-dot {
+  color: #DD4726; /* Replace with your desired color */
+}
+
+.ant-spin-dot-item {
+  background-color: #DD4726; /* Replace with your desired color */
+}
+
+
+
+
+
