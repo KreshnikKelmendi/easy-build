@@ -1,13 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div className='w-full flex flex-col lg:flex-row justify-center items-center lg:h-[607px] lg:mb-16 bg-[#191716] text-[#F3F4F4] px-5 lg:px-[50px] 2xl:px-[110px]'>
       <div className='lg:w-1/2 flex flex-col justify-center h-full'>
-        <p className='text-[32px] lg:text-[85px] font-custom1'>Get in touch</p>
+        <p className='text-[32px] lg:text-[85px] font-custom1'>{t('get_in_touch')}</p>
         <p className='2xl:w-[619px] mb-8 text-[18px] font-custom leading-[21.15px] lg:pr-16 2xl:pr-0'>
-          We specialize in lightweight construction solutions that redefine the building process. Our innovative approach focuses on prefabricated constructions, making use of advanced wood structures and ready-made elements.
+          {t('contact_desc1')}
         </p>
         <ul className='space-y-8 text-[15px] font-custom font-normal lg:mt-14'>
           <li className='flex gap-10 py-4'>

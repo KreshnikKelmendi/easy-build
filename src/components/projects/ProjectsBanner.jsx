@@ -3,8 +3,10 @@ import { gsap } from 'gsap';
 import { useInView } from 'react-intersection-observer';
 import SplitType from 'split-type';
 import projectbanner from '../assets/proejctsMain.png';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsBanner = () => {
+  const { t } = useTranslation();
   const { ref: bannerRef, inView: bannerInView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -59,13 +61,13 @@ const ProjectsBanner = () => {
             ref={titleRef}
             className='text-[32px] lg:text-[85px] font-custom1'
           >
-            Projects
+            {t('Projects')}
           </p>
           <p
             ref={textRef}
             className='lg:text-[18px] 2xl:w-[651px] leading-[21.15px] font-custom mt-4'
           >
-                We specialize in lightweight construction solutions that redefine the building process. Our innovative approach focuses on prefabricated constructions, making use of advanced wood structures and ready-made elements.
+            {t('projects_desc1')}
           </p>
         </div>
 

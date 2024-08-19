@@ -2,8 +2,11 @@ import React from 'react';
 import about1 from "../assets/about1.png";
 import CountNumbers from '../Home/CountNumbers'
 import FactoryOperates from './FactoryOperates';
+import { useTranslation } from 'react-i18next';
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
     <div className='bg-[#DD4624] lg:h-[1511px] 2xl:h-[1611px] relative z-10'>
@@ -14,16 +17,13 @@ const AboutUs = () => {
 
         <div className='w-full lg:w-1/2 flex flex-col lg:justify-center mt-0 lg:mt-0 lg:pl-[50px] 2xl:pl-[100px] lg:py-5 2xl:py-0'>
           <p className='font-custom1 text-[32px] lg:text-[60px] 2xl:text-[64px] text-[#F3F3F3] lg:leading-[67px] 2xl:leading-[75.2px] mt-6'>
-            Discover the future of construction with us
+            {t('aboutUsDescription')}
           </p>
           <p className='text-[18px] font-normal leading-[21.15px] text-[#F3F4F4] w-full 2xl:w-[667px] mt-6'>
-            We are dedicated to revolutionizing the construction industry with our unique focus on lightweight building methods. 
-            Our name reflects our mission: to simplify construction through innovative prefabrication techniques. 
-            We are pioneers in using wood as the primary construction material, offering sustainable and eco-friendly solutions.
+            {t('firstDescription')}
           </p>
           <p className='text-[18px] font-normal leading-[21.15px] text-[#F3F4F4] w-full 2xl:w-[667px] mt-4'>
-            Our mission is to transform the construction industry by promoting sustainable and innovative practices. Through continuous 
-            improvement of our technologies and services, we aim to deliver constructions that not only meet but exceed our clients' expectations.
+            {t('mission_firstDescription')}
           </p>
         </div>
       </div>

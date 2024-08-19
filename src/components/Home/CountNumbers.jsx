@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { gsap } from 'gsap';
+import { useTranslation } from 'react-i18next';
 
 const CountNumbers = () => {
+  const { t } = useTranslation();
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
@@ -43,14 +45,14 @@ const CountNumbers = () => {
         <p className='flex items-center text-white leading-[28.8px] text-left'>
           <span className='text-[36px] lg:text-[48px] font-custom1 text-black' ref={countRef1}>0</span>
           <span className='text-[36px] lg:text-[48px] font-custom1 text-black'>+</span>
-          <span className='text-[18px] lg:text-[24px] ml-5 '>Years of <br/> Experience</span>
+          <span className='text-[18px] lg:text-[24px] ml-5 w-1/2'>{t('firstCount')}</span>
         </p>
       </div>
       <div ref={ref2} className='flex justify-center lg:justify-start'>
         <p className='flex items-center text-white leading-[28.8px] text-left'>
           <span className='text-[36px] lg:text-[48px] font-custom1 text-black' ref={countRef2}>0</span>
           <span className='text-[36px] lg:text-[48px] font-custom1 text-black'>+</span>
-          <span className='text-[18px] lg:text-[24px] ml-5'>Project <br/> Completed</span>
+          <span className='text-[18px] lg:text-[24px] ml-5 lg:w-1/2'>{t('secondCount')}</span>
         </p>
       </div>
       <div ref={ref3} className='flex justify-center lg:justify-start'>

@@ -2,7 +2,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { gsap } from 'gsap';
 import { useInView } from 'react-intersection-observer';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import service1 from "../assets/service1.png";
 import service1Hover from "../assets/service1-full.jpg";
 import service2 from "../assets/service2.png";
@@ -14,24 +15,25 @@ const services = [
   {
     image: service1,
     hoverImage: service1Hover,
-    title: 'Wooden Frame Construction',
-    link: '/services', // Add link to the service
+    titleKey: 'title_wooden_frame_construction',
+    link: '/services',
   },
   {
     image: service2,
     hoverImage: service2Hover,
-    title: 'Cross-Laminated Timber (CLT)',
-    link: '/services', // Add link to the service
+    titleKey: 'title_cross_laminated_timber',
+    link: '/services',
   },
   {
     image: service3,
     hoverImage: service3Hover,
-    title: 'Modular Construction',
-    link: '/services', // Add link to the service
+    titleKey: 'title_modular_construction',
+    link: '/services',
   },
 ];
 
 const OurServices = () => {
+  const { t } = useTranslation();
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const imageRefs = useRef([]);
   const serviceRefs = useRef([]);
@@ -79,13 +81,13 @@ const OurServices = () => {
 
   return (
     <div className='bg-[#F3F4F4] px-5 lg:px-[60px] 2xl:px-[120px] py-12 lg:py-24 rounded-[15px] h-auto relative'>
-      <p className='text-[#DD4624] font-custom font-normal text-left'>SERVICES</p>
-      <p className='text-[32px] lg:text-[64px] font-custom1 text-left'>Our Services</p>
+      <p className='text-[#DD4624] font-custom font-normal text-left'>{t('services')}</p>
+      <p className='text-[32px] lg:text-[64px] font-custom1 text-left'>{t('our_services')}</p>
       <p className='max-w-full lg:max-w-[451px] leading-[22.7px] text-[18px] text-[#191716] font-custom font-normal mt-4 mx-auto lg:mx-0 text-left'>
-        We offer a range of services tailored to meet the diverse needs of our clients:
+        {t('serviceDescription')}
       </p>
       <div ref={inViewRef} className='grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-12 mt-16'>
-        {services?.map((service, index) => (
+        {services.map((service, index) => (
           <div
             key={index}
             ref={el => (serviceRefs.current[index] = el)}
@@ -96,12 +98,12 @@ const OurServices = () => {
             <img
               ref={el => (imageRefs.current[index] = el)}
               src={hoveredIndex === index ? service.hoverImage : service.image}
-              alt={service.title}
+              alt={t(service.titleKey)}
               className='w-full h-60 lg:h-[489px] object-cover rounded-lg transition-all duration-500 ease-in-out'
             />
             <Link to={service.link} className='block' onClick={() => window.scrollTo(0, 0)}>
               <p className='text-[20px] 2xl:text-[25px] font-custom font-semibold mt-6 lg:mt-9 flex items-center justify-start hover:text-[#DD4624] hover:scale-110 hover:duration-500'>
-                {service.title} <FaArrowRight className='ml-4 bg-[#DD4624] rounded-full text-white p-[5px]' />
+                {t(service.titleKey)} <FaArrowRight className='ml-4 bg-[#DD4624] rounded-full text-white p-[5px]' />
               </p>
             </Link>
           </div>

@@ -60,7 +60,7 @@ function App() {
               color: "#ffffff", // White text color
               border: "none",
               borderRadius: "0",
-              padding: "6px 12px",
+              padding: "4px 12px",
               cursor: "pointer",
               fontSize: "20px",
               zIndex: 1000,

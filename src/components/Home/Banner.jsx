@@ -5,8 +5,10 @@ import { gsap } from 'gsap';
 import image1 from "../assets/image 1.png";
 import Quality from './Quality';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -34,17 +36,17 @@ const Banner = () => {
       <div className='absolute top-0 left-0 w-full h-full flex items-center text-white lg:px-[50px] 2xl:px-[100px]'>
         <div ref={ref}>
           <h1 ref={titleRef} className='text-4xl lg:text-[85px] font-bold lg:w-[1061px] lg:leading-[99.87px] px-5'>
-            Where Innovation <br /> Meets Simplicity
+            {t('firstBanner')}
           </h1>
-          <p className='lg:w-[651px] w-full lg:text-justify text-[18px] mt-8 leading-[21.15px] px-5'>
-            We specialize in lightweight construction solutions that redefine the building process. Our innovative approach focuses on prefabricated constructions, making use of advanced wood structures and ready-made elements.
+          <p className='lg:w-[651px] w-full lg:text-justify text-[18px] mt-8 leading-[21.15px] tracking-tight px-5'>
+            {t('secondBanner')}
           </p>
           <div className='flex flex-col lg:flex-row gap-y-4 mt-10 gap-x-4 px-5'>
             <Link to="/projects" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
-              <button className='w-full lg:w-[200px] bg-[#191716] py-3 rounded-[8px] hover:bg-[#DD4624] hover:duration-500'>View Projects</button>
+              <button className='w-full lg:w-[200px] bg-[#191716] py-3 rounded-[8px] hover:bg-[#DD4624] hover:duration-500'>{t('firstButton')}</button>
             </Link>
             <Link to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
-              <button className='px-8 w-full lg:w-[200px] bg-[#DD4624] py-3 rounded-[8px] hover:bg-[#191716] hover:duration-500'>Contact Us</button>
+              <button className='px-8 w-full lg:w-[220px] bg-[#DD4624] py-3 rounded-[8px] hover:bg-[#191716] hover:duration-500'>{t('secondButton')}</button>
             </Link>
           </div>
         </div>

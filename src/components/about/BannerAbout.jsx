@@ -3,8 +3,10 @@ import { gsap } from 'gsap';
 import SplitType from 'split-type';
 import { useInView } from 'react-intersection-observer';
 import firstImage from '../assets/aboutBannerImage.png';
+import { useTranslation } from 'react-i18next';
 
 const BannerAbout = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -54,16 +56,16 @@ const BannerAbout = () => {
         <img src={firstImage} alt='' className='w-full h-[556px] object-cover' />
         <div ref={ref} className='absolute top-1/2 transform -translate-y-1/2 text-white px-5 lg:px-[50px] 2xl:px-[120px]'>
           <p
-            className='font-custom1 text-[32px] lg:text-[85px] mb-2'
+            className='font-custom1 text-[32px] lg:text-[85px] mb-2 capitalize'
             ref={headingRef}
           >
-            About us
+            {t('aboutUs')}
           </p>
           <p
             className='lg:w-[651px] text-[18px] font-custom font-medium leading-[21.15px]'
             ref={textRef}
           >
-            We specialize in lightweight construction solutions that redefine the building process. Our innovative approach focuses on prefabricated constructions, making use of advanced wood structures and ready-made elements.
+            {t('secondBannerAbout')}
           </p>
         </div>
       </div>
