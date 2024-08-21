@@ -187,7 +187,83 @@ i18n
           "Services": "Shërbimet",
           "Projects": "Projektet",
           "Contact": "Kontakti",
-          "firstBanner": "Ku inovacioni takohet me thjeshtësinë"
+          "firstBanner": "Ku inovacioni takohet me thjeshtësinë",
+          "secondBanner": "Ne specializohemi në zgjidhje ndërtimore të lehta që riformulojnë procesin e ndërtimit. Qasja jonë inovative përqendrohet në ndërtimet e parafabrikuara, duke përdorur struktura të avancuara druri dhe elemente të gatshme. Me ekspertizën tonë, ne sigurojmë efikasitet, qëndrueshmëri dhe cilësi në çdo projekt që ndërmarrim",
+          "firstButton": "Shiko Projektet",
+          "secondButton": "Na kontaktoni",
+          "quality.innovation_and_quality": "Inovacion dhe Cilësi",
+          "quality.efficiency_and_sustainability": "Efikasitet dhe Qëndrueshmëri",
+          "quality.highly_professional_staff": "Staf Jashtëzakonisht Profesional",
+          "firstCount": "Vite eksperiencë",
+          "secondCount": "Projekte të Përfunduara",
+          "services": "SHËRBIMET",
+          "our_services": "Shërbimet tona",
+          "serviceDescription": "Ne ofrojmë një gamë shërbimesh të përshtatura për të përmbushur nevojat e ndryshme të klientëve tanë",
+          "title_wooden_frame_construction": "Ndërtimi me Kornizë Druri",
+          "title_cross_laminated_timber": "Ndërtimi me Dru të Laminuar (CLT)",
+          "title_modular_construction": "Ndërtimi Modular",
+
+          "aboutUs": "RRETH NESH",
+          "aboutUsDescription": "Zbuloni të ardhmen e ndërtimit me ne",
+          "firstDescription": "Ne jemi të përkushtuar për të revolucionarizuar industrinë e ndërtimit me fokusin tonë unik në metodat e ndërtimit të lehta. Emri ynë pasqyron misionin tonë: të thjeshtojmë ndërtimin përmes teknikave inovative të parafabrikimit.",
+          "secondDescription": "Ne përdorim drurin si materialin kryesor të ndërtimit, duke ofruar zgjidhje të qëndrueshme dhe miqësore për mjedisin.",
+          "readMore": "Lexoni më shumë",
+
+          "ourProject": "Projektet tona",
+
+          "materials_that_we_use": "Materialet të cilat i përdorim",
+          "second_materials_that_we_use": "Të ndërtuara si një monogram i inicialeve të kompanisë, këto integrohen në mënyrë të natyrshme në strukturë.",
+          "wood_kvh": "Druri KVH",
+          "wood_clt": "CLT",
+          "wood_laminated_beams": "Dru i laminuar",
+          "wood_rockwool": "Lesh guri",
+          "wood_fiber_wood": "Fiber Druri",
+          "wood_osb": "OSB",
+          "wood_plywood": "Plywood",
+          "step_by_step": "Hap pas Hapi",
+          "step_by_step_description": "Nga shtëpitë rezidenciale te ndërtesat komerciale dhe objektet me përmasa të mëdha, projektet tona tregojnë shumëllojshmërinë dhe efikasitetin e ndërtimit të lehtë.",
+          "contactBanner": "Gati për të filluar?",
+          "second_contactBanner": "Na kontaktoni",
+          "get_started": "Filloni",
+
+          "secondBannerAbout": "Ne jemi të përkushtuar për të revolucionarizuar industrinë e ndërtimit me fokusin tonë unik në metodat e ndërtimit të lehta. Emri ynë pasqyron misionin tonë: të thjeshtojmë ndërtimin përmes teknikave inovative të parafabrikimit.",
+          "mission_firstDescription": "Misioni ynë është të transformojmë industrinë e ndërtimit duke promovuar praktika të qëndrueshme dhe inovative. Përmes përmirësimit të vazhdueshëm të teknologjive dhe shërbimeve tona, synojmë të ofrojmë ndërtime që jo vetëm përmbushin, por edhe tejkalojnë pritjet e klientëve tanë.",
+          "our_factory_operates": "Fabrika jonë operon",
+          "three_core_elements": "me tre elementët kryesorë",
+          "wooden_frame_construction_desc": "Duke përdorur panele të parafabrikuara, ne e thjeshtojmë procesin e ndërtimit, duke reduktuar kohën dhe mbetjet, ndërsa sigurojmë struktura të cilësisë së lartë.",
+          "clt_construction_desc": "Kjo metodë ofron forcë dhe qëndrueshmëri të jashtëzakonshme, ideale për krijimin e ndërtesave të fuqishme me një estetikë natyrale.",
+          "large_wooden_beams_preparation_desc": "E përsosur për ndërtimin e hapësirave të mëdha si sallat, palestrat, dhe struktura të tjera të gjera,  trarët tona të përgatitura veçanërisht ofrojnë shkathtësi dhe mbështetje të pa krahasueshme.",
+          "ourTeam": "Ekipi ynë",
+          "firstDescriptionTeam": "Ekipi ynë në EasyBuild udhëhiqet nga një pasion për inovacionin, duke kërkuar vazhdimisht mënyra të reja për të përmirësuar dhe rafinuar mënyrën se si ndërtohen strukturat.",
+          "secondDescriptionTeam": "Përmes angazhimit tonë ndaj teknikave të avancuara të parafabrikimit, ne jo vetëm që thjeshtojmë procesin e ndërtimit, por gjithashtu ngrisim standardet e cilësisë dhe përgjegjësisë mjedisore.",
+          "second_services_banner2": "Ne ofrojmë një gamë të gjerë shërbimesh ndërtimi të dizajnuara për të përmbushur nevojat e ndryshme të klientëve. Çdo shërbim është krijuar për të përmbushur standardet më të larta të qëndrueshmërisë dhe performancës, duke ofruar zgjidhje të besueshme dhe të qëndrueshme për ndërtimin modern.",
+          "wooden_frame_construction": "Ndërtimi me Kornizë Druri (Sistemi i Paneleve)",
+          "wooden_frame_construction_desc_1": "Sistemi ynë i ndërtimit me kornizë druri shfrytëzon efikasitetin dhe saktësinë e paneleve të parafabrikuara. Përdorimi i kornizës së drurit jo vetëm që shpejton kohën e ndërtimit, por gjithashtu minimizon mbetjet e materialeve, duke e bërë atë një opsion të pershtatshëm për mjedisin.",
+          "wooden_frame_construction_desc_2": "Përveç kësaj, ky sistem ofron fleksibilitet në dizajn, duke lejuar stile të ndryshme arkitekturore, ndërsa ruan integritetin strukturor dhe efikasitetin termik.",
+          "view_more": "Shfaq më shumë",
+          "view_less": "Shfaq më pak",
+          "how_we_build": "Si ndërtojmë",
+          "step_by_step_desc": "Ne e dimë që ndërtimi i një shtëpie mund të jetë një nga vendimet më të rëndësishme që merrni. Për të kuptuar më mirë tërësinë e bashkëpunimit me ne, lexoni procesin “hapi pas hapi”.",
+          "planning": "1. Planifikimi",
+          "construction": "2. Ndërtimi",
+          "completion": "3. Përfundimi",
+          "Kreuzverleimter Holzbau (CLT)": "Ndërtimi me Dru (CLT)",
+          "Kreuzverleimter Holzbau_desc1": "Për projekte që kërkojnë forcë dhe qëndrueshmëri të lartë, zgjidhjet tona CLT janë ideale. CLT është veçanërisht i përshtatshëm për ndërtesa me shumë kate, duke ofruar një alternativë të qëndrueshme ndaj materialeve tradicionale si çeliku dhe betoni.",
+          "Kreuzverleimter Holzbau_desc2": "Ndërtimi me CLT është jashtëzakonisht i gjithanshëm, duke u mundësuar arkitektëve të eksplorojnë dizajne kreative ndërsa ruajnë fuqinë dhe qëndrueshmërinë e nevojshme për ndërtesa me performancë të lartë.",
+          "modular_construction": "Ndërtimi Modular",
+          "modular_construction_desc1": "E Ardhmja e Ndërtimit të Shpejtë! Zgjidhja jonë inovative `turnkey` mund të ndërtojë një shtëpi plotësisht funksionale brenda vetëm një dite. Thuaj lamtumirë proceseve të gjata ndërtimi dhe fillo me hapësirat e banimit të menjëhershme. Përjetoni komoditetin dhe efikasitetin e zgjidhjeve të Aster Domo—ku shpejtësia dhe cilësia bashkohen në ndërtimin e shtëpive.",
+          "modular_construction_desc2": "Jetë e Qëndrueshme dhe e Përballueshme. Eksploroni hapësira të bollshme banimi me plane kati që variojnë nga një deri në katër dhoma gjumi. Shtëpitë tona janë ndërtuar me panele që janë 60% të përfunduara ose me module që janë 98% të përfunduara, të përshtatura sipas preferencave tuaja. Zgjidhni nga tre fasada unike, të gjitha duke përmbushur standardin eko-miqësor të energjisë KfW 40. Është koha të krijoni hapësirën tuaj të ëndrrave me sistemin tonë modular—vizioni juaj, shtëpia juaj, stili juaj i jetesës.",
+          "projects_desc1": "Nga shtëpitë rezidenciale te ndërtimet komerciale dhe objektet e mëdha, projektet tona tregojnë versatilitetin dhe efikasitetin e ndërtimit të lehtë. Jemi krenarë që ofrojmë rezultate të jashtëzakonshme në sektore të ndryshme, duke përfshirë projektet rezidenciale, komerciale dhe institucionale. Çdo projekt thekson angazhimin tonë ndaj cilësisë, qëndrueshmërisë dhe inovacionit. Qëndroni të informuar ndërsa përditësojmë këtë seksion me arritjet tona më të fundit dhe projektet në zhvillim.",
+          "get_in_touch": "Na kontaktoni",
+          "contact_desc1": "Na pëlqen të dëgjojmë nga ju! Nëse keni ndonjë pyetje, keni nevojë për më shumë informacion, ose jeni gati të filloni projektin tuaj të ardhshëm të ndërtimit, ekipi ynë është këtu për t'ju ndihmuar."
+
+
+
+
+
+
+
+
         }
       }
     },

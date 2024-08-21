@@ -1,7 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
+  const { t }  = useTranslation()
+
   return (
     <footer className='lg:h-[615px] bg-[#191716] text-white px-5 lg:px-[50px] 2xl:px-[120px] py-8 flex flex-col lg:flex-row justify-between items-start lg:items-center mt-[-35px] lg:mt-[-100px]'>
       <div className='flex flex-col lg:flex-row lg:items-start gap-16 lg:gap-24'>
@@ -32,28 +36,41 @@ const Footer = () => {
         </div>
 
         <div className='lg:ml-16 lg:mt-16'>
-          <p className='text-[15px] font-custom font-bold mb-8 text-[#F3F4F4]'>PRODUCT</p>
-          <ul className='space-y-8 text-[15px] font-custom font-normal'>
-            <li><a href='#' className='hover:text-gray-400'>Home</a></li>
-            <li><a href='#' className='hover:text-gray-400'>Testimonial</a></li>
-            <li><a href='#' className='hover:text-gray-400'>Join Our Online Community for Free</a></li>
+          <p className='text-[15px] font-custom font-bold mb-8 text-[#F3F4F4]'>MENU</p>
+          <ul className='text-[15px] font-custom font-normal'>
+            <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className='cursor-pointer duration-300 hover:text-[#DD4624]'>
+              <li className='mb-8'><a href='#' className='hover:text-gray-400'>{t('Home')}</a></li>
+            </NavLink>
+            <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className='cursor-pointer duration-300 hover:text-[#DD4624]'>
+              <li className='mb-8'><a href='#' className='hover:text-gray-400'>{t('About')}</a></li>
+            </NavLink>
+            <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className='cursor-pointer duration-300 hover:text-[#DD4624]'>
+              <li className='mb-8'><a href='#' className='hover:text-gray-400'>{t('Services')}</a></li>
+            </NavLink>
+            <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className='cursor-pointer duration-300 hover:text-[#DD4624]'>
+              <li className='mb-8'><a href='#' className='hover:text-gray-400'>{t('Projects')}</a></li>
+            </NavLink>
+            <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className='cursor-pointer duration-300 hover:text-[#DD4624]'>
+              <li><a href='#' className='hover:text-gray-400'>{t('Contact')}</a></li>
+            </NavLink>
           </ul>
         </div>
+
         {/* Product Section */}
         <div className='lg:ml-16 lg:mt-16'>
-          <p className='text-[15px] font-custom font-bold mb-8 text-[#F3F4F4]'>PRODUCT</p>
+          <p className='text-[15px] font-custom font-bold mb-8 text-[#F3F4F4]'>{t('services')}</p>
           <ul className='space-y-8 text-[15px] font-custom font-normal'>
-            <li><a href='#' className='hover:text-gray-400'>Home</a></li>
-            <li><a href='#' className='hover:text-gray-400'>Testimonial</a></li>
-            <li><a href='#' className='hover:text-gray-400'>Join Our Online Community for Free</a></li>
+            <li><a href='#' className='hover:text-gray-400'>{t('title_wooden_frame_construction')}</a></li>
+            <li><a href='#' className='hover:text-gray-400'>{t('title_cross_laminated_timber')}</a></li>
+            <li><a href='#' className='hover:text-gray-400'>{t('title_modular_construction')}</a></li>
           </ul>
         </div>
 
         {/* Get in Touch Section */}
         <div className='lg:mt-16'>
-          <p className='text-[15px] font-custom font-bold mb-8 text-[#F3F4F4]'>NOT QUITE READY FOR SURVEY?</p>
+          <p className='text-[15px] font-custom font-bold mb-8 text-[#F3F4F4] uppercase'>{t('firstBanner')}</p>
           <ul className='space-y-8 text-[15px] font-custom font-normal'>
-            <li><a href='#' className='hover:text-gray-400'>Join our online no-community for free. no spam, ever.</a></li>
+            <li><a href='#' className='hover:text-gray-400'>{t('aboutUsDescription')}</a></li>
             <li className='flex gap-10 py-4'>
               <a href='#' className='hover:text-gray-400 hover:bg-[#DD4624] hover:rounded-full flex items-center justify-center w-[64px] h-[64px]'>
                 <FaFacebookF size={37} color="#F3F4F4" />
