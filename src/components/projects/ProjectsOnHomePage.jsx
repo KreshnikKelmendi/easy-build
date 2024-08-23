@@ -12,7 +12,7 @@ const ProjectsOnHomePage = () => {
       <div className='flex flex-col lg:flex-row justify-between lg:items-center'>
         <p className='text-[32px] lg:text-[64px] font-custom1 text-left text-[#F3F4F4]'>{t('ourProject')}</p>
 
-      <div className='flex flex-wrap gap-6 mt-4 font-custom lg:pr-[50px] 2xl:pr-[120px]'>
+      <div className='hidden flex-wrap gap-6 mt-4 font-custom lg:pr-[50px] 2xl:pr-[120px]'>
         <span className='font-custom text-lg lg:text-[20px] text-[#F3F4F4]'>All Works</span>
         <span className='font-custom text-lg lg:text-[20px] text-[#F3F4F4]'>Construction</span>
         <span className='font-custom text-lg lg:text-[20px] text-[#F3F4F4]'>Architecture</span>

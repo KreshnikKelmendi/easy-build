@@ -38,7 +38,7 @@ const Banner = () => {
           <h1 ref={titleRef} className='text-4xl lg:text-[85px] font-bold lg:w-[1061px] lg:leading-[99.87px] px-5'>
             {t('firstBanner')}
           </h1>
-          <p className='lg:w-[651px] w-full lg:text-justify text-[18px] mt-8 leading-[21.15px] tracking-tight px-5'>
+          <p className='lg:w-[651px] w-full lg:text-justify text-[18px] mt-8 leading-[21.15px] tracking-tighter px-5'>
             {t('secondBanner')}
           </p>
           <div className='flex flex-col lg:flex-row gap-y-4 mt-10 gap-x-4 px-5'>

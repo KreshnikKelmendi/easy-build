@@ -59,7 +59,7 @@ const CountNumbers = () => {
         <p className='flex items-center text-white leading-[28.8px] text-left'>
           <span className='text-[36px] lg:text-[48px] font-custom1 text-black' ref={countRef3}>0</span>
           <span className='text-[36px] lg:text-[48px] font-custom1 text-black'>+</span>
-          <span className='text-[18px] lg:text-[24px] ml-5'>Winning <br/> Global Award</span>
+          <span className='text-[18px] lg:text-[24px] ml-5 lg:w-1/2'>{t('thirdCount')}</span>
         </p>
       </div>
     </div>
