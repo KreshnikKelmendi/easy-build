@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import SplitType from 'split-type';
 import { useInView } from 'react-intersection-observer';
-import firstImage from '../assets/aboutBannerImage.png';
 import { useTranslation } from 'react-i18next';
+import video7 from "../assets/EASY_BUILD_1 (1).mp4";
 
 const BannerAbout = () => {
   const { t } = useTranslation();
@@ -35,39 +35,40 @@ const BannerAbout = () => {
         duration: 1,
         ease: 'power2.out',
       });
-
-      gsap.fromTo(
-        '.banner-image',
-        { opacity: 0, scale: 0.8 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          delay: 0.5,
-          ease: 'power2.out',
-        }
-      );
     }
   }, [inView]);
 
   return (
-    <div className='w-full relative' >
-      <div className='w-full'>
-        <img src={firstImage} alt='' className='w-full h-[556px] object-cover' />
-        <div ref={ref} className='absolute top-1/2 transform -translate-y-1/2 text-white px-5 lg:px-[50px] 2xl:px-[120px]'>
+    <div className='w-full relative flex flex-col lg:flex-row items-center bg-uberuns'>
+      {/* Text Section */}
+      <div className='lg:w-1/2 w-full px-5 lg:px-10 xl:px-20 py-5'>
+        <div ref={ref} className='text-white'>
           <p
-            className='font-custom1 text-[32px] lg:text-[85px] mb-2 capitalize'
+            className='font-custom1 text-[28px] lg:text-[45px] xl:text-[65px] mb-2 capitalize'
             ref={headingRef}
           >
             {t('aboutUs')}
           </p>
           <p
-            className='lg:w-[651px] text-[18px] font-custom font-medium leading-[21.15px]'
+            className='lg:w-full text-[16px] lg:text-[18px] font-custom font-medium leading-[21.15px]'
             ref={textRef}
           >
             {t('secondBannerAbout')}
           </p>
         </div>
+      </div>
+
+      {/* Video Section */}
+      <div className='lg:w-1/2 w-full lg:h-[80vh]'>
+        <video
+          className='w-full h-full object-cover'
+          src={video7}
+          playsInline
+          autoPlay
+          loop
+          muted
+          alt="Video description"
+        />
       </div>
     </div>
   );

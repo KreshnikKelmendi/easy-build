@@ -235,7 +235,7 @@ i18n
           "three_core_elements": "me tre elementet kryesorë",
           "wooden_frame_construction_desc": "Duke përdorur panele të parafabrikuara, ne e thjeshtojmë procesin e ndërtimit, duke reduktuar kohën dhe mbetjet, ndërsa sigurojmë struktura të cilësisë së lartë.",
           "clt_construction_desc": "Kjo metodë ofron forcë dhe qëndrueshmëri të jashtëzakonshme, ideale për krijimin e ndërtesave të fuqishme me një estetikë natyrale.",
-          "large_wooden_beams_preparation_desc": "E përsosur për ndërtimin e hapësirave të mëdha si sallat, palestrat, dhe struktura të tjera të gjera,  trarët tona të përgatitura veçanërisht ofrojnë shkathtësi dhe mbështetje të pa krahasueshme.",
+          "large_wooden_beams_preparation_desc": "E përsosur për ndërtimin e hapësirave të mëdha si sallat, palestrat, dhe struktura të tjera të gjera, trarët tona të përgatitura veçanërisht ofrojnë shkathtësi dhe mbështetje të pa krahasueshme.",
           "ourTeam": "Ekipi ynë",
           "firstDescriptionTeam": "Ekipi ynë në EasyBuild udhëhiqet nga një pasion për inovacionin, duke kërkuar vazhdimisht mënyra të reja për të përmirësuar dhe rafinuar mënyrën se si ndërtohen strukturat.",
           "secondDescriptionTeam": "Përmes angazhimit tonë ndaj teknikave të avancuara të parafabrikimit, ne jo vetëm që thjeshtojmë procesin e ndërtimit, por gjithashtu ngrisim standardet e cilësisë dhe përgjegjësisë mjedisore.",

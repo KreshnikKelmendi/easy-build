@@ -48,6 +48,13 @@ body{
   background-color: #DD4726; /* Replace with your desired color */
 }
 
+.bg-uberuns{
+  background-image: url(./components/assets/aboutBannerImage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 
